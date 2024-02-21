@@ -12,23 +12,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="relative h-dvh w-dvw">
+    <main className="relative h-[100vh] w-[100vw]">
       <Tab />
       <div className="z-10 absolute">{children}</div>
       <video
-        src={require(`@/public/bg/bgDark.webm`)}
-        autoPlay={true}
-        loop={true}
-        muted={true}
+        autoPlay
+        loop
+        muted
         className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:flex hidden"
-      />
+      >
+        <source src="/bg/bgDark.mp4" type="video/mp4" />
+      </video>
       <video
-        src={require(`@/public/bg/bgLight.webm`)}
-        autoPlay={true}
-        loop={true}
-        muted={true}
+        autoPlay
+        loop
+        muted
         className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:hidden flex"
-      />
+      >
+        <source src="/bg/bgLight.mp4" type="video/mp4" />
+      </video>
     </main>
   );
 }
