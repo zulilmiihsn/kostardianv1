@@ -20,7 +20,7 @@ export default function RootLayout({
         autoPlay
         loop
         muted
-        className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:flex hidden"
+        className="-z-10 fixed md:scale-150 scale-[3.5] h-[100vh] grayscale dark:flex hidden"
       >
         <source src="/bg/bgDark.mp4" type="video/mp4" />
       </video>
@@ -28,7 +28,7 @@ export default function RootLayout({
         autoPlay
         loop
         muted
-        className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:hidden flex"
+        className="-z-10 fixed md:scale-150 scale-[3.5] h-[100vh] grayscale dark:hidden flex"
       >
         <source src="/bg/bgLight.mp4" type="video/mp4" />
       </video>

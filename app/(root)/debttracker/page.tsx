@@ -45,8 +45,8 @@ export default function Debttracker() {
   };
 
   return (
-    <div className="min-h-dvh w-dvw">
-      <div className="min-h-dvh  px-12 py-12 flex flex-col gap-2 justify-center items-center">
+    <div className="min-h-[100vh] w-[100vw]">
+      <div className="min-h-[100vh]  px-12 py-12 flex flex-col gap-2 justify-center items-center">
         {val.length === 0 ? (
           <div className="w-full h-full flex flex-col gap-2 justify-center items-center text-black dark:text-secondary text-center">
             <h1>Belum ada hutang disini. Ingin menambahkan?</h1>
