@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primarydark: #030303;
+  --secondarydark: #E3E2DC;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+h1 {
+  font-family: var(--abyss);
+  @apply text-2xl
+}
+
+h2 {
+  @apply text-xl
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.glow {
+box-shadow: 120px 80px 40px 20px #fff;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0); 
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.2s ease-out;
+}
