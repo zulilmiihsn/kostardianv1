@@ -57,7 +57,7 @@ export default function Debttracker() {
             <div className="w-fit fixed drop-shadow-md z-10 bottom-8 md:top-8">
             <AddDebt />
             </div>
-            <div className="w-full h-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-2 place-content-center">
+            <div className="w-full h-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
               {val.map((values) => (
                 <div
                   key={values.id}
