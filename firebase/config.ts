@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDesVh0JLyNkaPY16_qLZZZax2iVjr3-k0",
-  authDomain: "kost-ardian-dd813.firebaseapp.com",
-  projectId: "kost-ardian-dd813",
-  storageBucket: "kost-ardian-dd813.appspot.com",
-  messagingSenderId: "616078708191",
-  appId: "1:616078708191:web:f0cc1aed8a45e6a1f2486a"
+  apiKey: "AIzaSyBs9xaRHQUjEVwuLvSlCX532Fo23tr7xNY",
+  authDomain: "kost-ardian-a21ae.firebaseapp.com",
+  projectId: "kost-ardian-a21ae",
+  storageBucket: "kost-ardian-a21ae.appspot.com",
+  messagingSenderId: "334669991205",
+  appId: "1:334669991205:web:8fdfc074cbe2322c2e1ecc"
 };
 
 // Initialize Firebase
