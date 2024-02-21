@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kost Ardian",
   description: "A dummy project",
+  manifest: "manifest.json"
 };
 
 export default function RootLayout({
