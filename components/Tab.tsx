@@ -19,7 +19,7 @@ const clickSounds = () => {
 export default function Tab() {
   const pathname = usePathname();
   return (
-    <nav className="fixed top-2 inset-x-0 flex justify-center overflow-visible z-20 drop-shadow-md">
+    <nav className="fixed top-2 inset-x-0 flex justify-center drop-shadow-xl overflow-visible z-20">
       <div className={`w-fit bg-[#181818] p-2 rounded-xl flex gap-4 items-center ${actor.className}`}>
         <Switcher/>
         <Link

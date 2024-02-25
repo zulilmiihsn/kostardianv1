@@ -4,7 +4,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kost Ardian",
   description: "A dummy project",
-  manifest: "manifest.json"
 };
 
 export default function RootLayout({
@@ -13,25 +12,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="relative h-[100vh] w-[100vw]">
+    <main className="relative h-dvh w-dvw">
       <Tab />
       <div className="z-10 absolute">{children}</div>
       <video
-        autoPlay
-        loop
-        muted
-        className="-z-10 fixed md:scale-150 scale-[3.5] h-[100vh] grayscale dark:flex hidden"
-      >
-        <source src="/bg/bgDark.mp4" type="video/mp4" />
-      </video>
+        src={require(`@/public/bg/bgDark.webm`)}
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:flex hidden"
+      />
       <video
-        autoPlay
-        loop
-        muted
-        className="-z-10 fixed md:scale-150 scale-[3.5] h-[100vh] grayscale dark:hidden flex"
-      >
-        <source src="/bg/bgLight.mp4" type="video/mp4" />
-      </video>
+        src={require(`@/public/bg/bgLight.webm`)}
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        className="-z-10 fixed md:scale-150 scale-[3.5] h-dvh grayscale dark:hidden flex"
+      />
     </main>
   );
 }

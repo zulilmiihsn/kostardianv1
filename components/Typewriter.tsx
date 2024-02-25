@@ -45,7 +45,7 @@ const Typewriter = () => {
   }, [isDeleting, currentIndex, textIndex]);
 
   return (
-    <h1 className="flex flex-wrap">
+    <h1 className="flex flex-wrap justify-center">
     Where&nbsp;
       {currentText ? (
         <span>{currentText + "|"}</span>

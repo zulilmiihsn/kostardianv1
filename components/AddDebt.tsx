@@ -12,7 +12,7 @@ const clickSounds = () => {
   audioElement.play();
 }
 
-export default function AddDebt() {
+export default function AddDebt({ className, title }: any) {
   const [penghutang, setPenghutang] = useState("");
   const [pemilik, setPemilik] = useState("");
   const [nominal, setNominal] = useState("");
@@ -51,9 +51,9 @@ export default function AddDebt() {
       <button
         onClick={handleOpen}
         onMouseEnter={hoverSounds}
-        className="w-fit rounded-xl grid place-content-center bg-red-400 z-10 px-2 py-1 text-black dark:text-white hover:-translate-y-1 transition ease-in-out"
+        className={`rounded-xl grid place-content-center bg-red-400 z-10 drop-shadow-xl text-black dark:text-white hover:-translate-y-1 transition ease-in-out ${className}`}
       >
-        Tambah Hutang
+        {title}
       </button>
 
       {isOpen && (

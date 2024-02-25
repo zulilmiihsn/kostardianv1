@@ -33,21 +33,35 @@ h2 {
 box-shadow: 120px 80px 40px 20px #fff;
 }
 
+.deleteButton:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 @keyframes floating {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }    
 }
 
-@keyframes slide-up {
-  from {
-    transform: translateY(15%);
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
   }
-  to {
-    transform: translateY(0); 
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
 
-.animate-slide-up {
-  animation: slide-up 0.2s ease-out;
-}
+
